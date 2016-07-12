@@ -41,11 +41,64 @@ function helloTime()
             echo helloTime();
             ?>
 <br>
-            <?php
-            $h = date(H);
-            $righTime = $h+1;
-            echo $righTime.':'. date(i);
-?>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+       <?php
+
+
+
+
+
+
+
+       $h = date(H);
+       $m = date(i);
+
+
+
+       function time($h)
+       {
+           if ($h >= 5 && $h <= 21) {
+               echo "сейчас $h часов";
+           } elseif ($h >= 22 && $h <= 4) {
+               echo "сейчас $h часа";
+           } else {
+               return "none";
+
+           }
+
+       }
+       time($h);
+
+
+
+
+
+            //$righTime = $h+1;
+            //echo $righTime.':'.$m;
+
+
+
+
+
+
+
+
+
+            ?>
+
+
         </h1>
 
         </div>
